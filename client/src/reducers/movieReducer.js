@@ -1,11 +1,13 @@
 const initialState={
     movie:[],
+    searchedMovie:[],
     detail:[]
 }
 
 const movieReducer =(state=initialState,action)=>{
     switch (action.type) {
         case "GET_MOVIE":
+            
             return{
                 ...state,
                 movie:action.payload
@@ -13,7 +15,7 @@ const movieReducer =(state=initialState,action)=>{
         case "SEARCH_MOVIE":
             return{
                 ...state,
-                movie:action.payload
+                searchedMovie:action.payload
             }  
             
         case "MOVIE_DETAIL":
@@ -25,6 +27,8 @@ const movieReducer =(state=initialState,action)=>{
         default:
             return{
             ...state,
+            
+            
         }
     }
 }

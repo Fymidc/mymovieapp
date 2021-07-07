@@ -17,7 +17,7 @@ function Login() {
                 <button> Sign In </button>
             </div>
 
-            <a href="/"> <i class="fa fa-google-plus" aria-hidden="true"></i>  Login With Google </a>
+            <a href="/auth/google"> <i className="fa fa-google-plus" aria-hidden="true"></i>  Login With Google </a>
             
             
             <h5>New to Netflix?</h5>
