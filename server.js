@@ -42,11 +42,11 @@ app.get('/auth/google',passport.authenticate('google',{
 app.get('/auth/google/callback',
 passport.authenticate('google'),
 (req,res)=>{
-    res.redirect('/user');
+    res.redirect('/');
 }
 )
 
-app.get('/',(req,res)=>{})
+//app.get('/',(req,res)=>{})
 
 app.get('/api/current_user', (req,res)=>{
    console.log(req.user)
